@@ -1,0 +1,19 @@
+.FooterContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100vw;
+  height: 20vh;
+}
+
+.Linkedin, .Github, .Public, .Info {
+  width: 0px;
+  height: 0px;
+  color: white;
+}
+/*# sourceMappingURL=Footer.css.map */

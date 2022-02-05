@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+.AboutContainer {
+  width: 375px;
+  height: 500px;
+}
+
+.Home {
+  font-size: 30px;
+  text-decoration: none;
+  color: black;
+}
+
+.about{
+    color: black;
+    font-family: Staatliches;
+    .aaa{
+        color: black;
+    }
+}
+
+/*
+    --------------------------------------
+                MEDIA QUERYS
+    --------------------------------------
+*/
+
+$minWidth: 375px;
+$mediWidth1: 446px;
+$mediWidth2: 540px;
+$mediWidth3: 712px;
+$maxWidth1: 1022px;
+$maxWidth2: 1920px;
+
+@media (min-width: $minWidth) and (max-width: $mediWidth1) {
+    .Home{
+        width: 100px;
+        height: 30px;
+        position: absolute;
+        top: 0px;
+        left: 140px;
+    }
+
+    .Head{
+        position: absolute;
+        top: 50px;
+        left: 150px;
+    }
+    
+    .about{
+        position: absolute;
+        top: 100px;
+    }
+}

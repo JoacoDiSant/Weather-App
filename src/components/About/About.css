@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+.AboutContainer {
+  width: 375px;
+  height: 500px;
+}
+
+.Home {
+  font-size: 30px;
+  text-decoration: none;
+  color: black;
+}
+
+.about {
+  color: black;
+  font-family: Staatliches;
+}
+
+.about .aaa {
+  color: black;
+}
+
+/*
+    --------------------------------------
+                MEDIA QUERYS
+    --------------------------------------
+*/
+@media (min-width: 375px) and (max-width: 446px) {
+  .Home {
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    top: 0px;
+    left: 140px;
+  }
+  .Head {
+    position: absolute;
+    top: 50px;
+    left: 150px;
+  }
+  .about {
+    position: absolute;
+    top: 100px;
+  }
+}
+/*# sourceMappingURL=About.css.map */

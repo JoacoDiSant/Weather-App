@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+.generalContainer {
+  margin: 0px;
+  padding: 0px;
+}
+
+.initialContainer {
+  font-size: 30px;
+  font-family: "Staatliches", cursive;
+  color: white;
+  text-shadow: 14px 13px 10px rgb(0, 0, 0);
+  width: 100vw;
+  height: 100vh;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h1{
+  position: absolute;
+  top: 350px;
+}
+
+
+.btnContainer {
+  position: absolute;
+  bottom: -150px;
+  left: 600px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.btn {
+  background-color: transparent !important;
+  cursor: pointer;
+  border: 1px solid black;
+  width: 600px;
+  height: 40px;
+  border-radius: 100px 0px 100px 0px;
+  margin-bottom: 10px;
+}
+
+.aboutContainer {
+  font-family: "Staatliches", cursive;
+  color: black;
+  text-shadow: 0px 0px 5px white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  width: 100vw;
+  height: 100vh;
+  text-transform: capitalize;
+  background-image: url("../../imgs/WEB21-extreme-weather-1800x600.jpeg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.arrow{
+  font-size: 200px !important;
+  position: absolute;
+  bottom: 30px;
+  animation: arrow 1s linear 0s infinite alternate-reverse forwards;
+}
+
+
+/*
+    --------------------------------------
+            ANIMATIONS KEYFRAMES
+    --------------------------------------
+*/
+
+@keyframes arrow {
+  0% {
+    transform: translateY(-250px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+/*
+    --------------------------------------
+                MEDIA QUERYS
+    --------------------------------------
+*/
+
+$minWidth: 375px;
+$mediWidth1: 446px;
+$mediWidth2: 540px;
+$mediWidth3: 712px;
+$maxWidth1: 1022px;
+$maxWidth2: 1920px;
+
+@media (min-width: $minWidth) and (max-width: $mediWidth1) {
+  .initialContainer {
+    display: flex;
+    align-items: center;
+  }
+  .ContainerBackPage {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    text-transform: capitalize;
+  }
+
+  .btnContainer {
+    bottom: -100px;
+    left: 100px;
+    width: 200px;
+    height: 30px;
+  }
+
+  .arrow{
+    font-size: 100px !important;
+    position: absolute;
+    bottom: 220px;
+    animation: arrow 1s linear 0s infinite alternate-reverse forwards;
+  }
+
+  .btn {
+    width: 200px;
+    height: 40px;
+  }
+
+  @keyframes arrow {
+    0% {
+      transform: translateY(-170px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+}

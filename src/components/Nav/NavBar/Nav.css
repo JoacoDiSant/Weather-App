@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+.NavContainer {
+  width: 100vw;
+  height: 10vh;
+  background: -webkit-gradient(linear, left top, right top, from(#1d2671), to(#c33764));
+  background: linear-gradient(to right, #1d2671, #c33764);
+}
+
+.Name {
+  font-family: "Staatliches", cursive;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: 20px;
+  font-size: 25px;
+  text-shadow: 14px 13px 10px black;
+}
+/*# sourceMappingURL=Nav.css.map */
