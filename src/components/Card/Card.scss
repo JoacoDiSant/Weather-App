@@ -1,94 +1,60 @@
-.card_container{
-    -webkit-box-shadow: 8px 9px 2px 0px rgba(0,0,0,0.7); 
-    box-shadow: 8px 9px 2px 0px rgba(0,0,0,0.7);
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    width: 15vw;
-    min-width: 180px;
-    height: 12vh;
-    cursor: pointer;
-    background-image: -moz-linear-gradient(top, #1c1e1f60, #eff3f73a);
-    
+.CardContainer {
+  display: inline-block;
+  background-color: #450943;
+  background-image: linear-gradient(
+    43deg,
+    #450943 0%,
+    #c850c0 46%,
+    #420d94 100%
+  );
+  width: 480px;
+  margin: 0 auto;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.body {
+  visibility: hidden;
+}
+
+.CardContainer:hover {
+  box-shadow: 2px 0px 13px 5px #05fc91 inset,
+    7px 3px 9px 3px rgba(5, 252, 145, 0.57);
+  cursor: pointer;
+}
+
+.name {
+  text-align: center;
+  color: white;
+  border-bottom: solid thin white;
+  text-transform: uppercase;
+  font-weight: 100;
+  line-height: 1.1;
+  letter-spacing: 0.25em;
+  margin: 0;
+  padding: 0;
+}
+
+.temp {
+  text-align: right;
+  color: black;
+}
+
+/*
+    --------------------------------------
+                MEDIA QUERYS
+    --------------------------------------
+*/
+
+$minWidth: 375px;
+$mediWidth1: 446px;
+$mediWidth2: 540px;
+$mediWidth3: 712px;
+$maxWidth1: 1022px;
+$maxWidth2: 1920px;
+
+@media (min-width: $minWidth) and (max-width: $mediWidth1) {
+  .CardContainer {
+    width: 350px;
   }
-  
-  .card_header{
-    position: relative;
-    margin-top: 3px;
-    margin-bottom: 0px;
-    display:flex;
-    height: 30px;
-    width: 15vw;
-    min-width: 180px;
-    
-  }
-  
-  #city{
-    width: 13vw;
-    font-size: 1,5rem;
-    font-weight: 600;
-    color:whitesmoke;
-    text-shadow: 0 0 10px #050505, 6px 18px 2px rgba(206,89,55,0);
-    margin:0px;
-    padding:0px;
-    display:flex;
-    align-self: center;
-    justify-content: center;
-  
-  }
-  
-  #closeIcon {
-    /* background: transparent; */
-    width: 1vw;
-    margin-top: 1px;
-    display:flex;
-    position: absolute;
-    font:16px Arial, Helvetica, sans-serif; 
-    font-weight:bold; 
-    padding: 1px 3px 1px 4px;
-    border-radius: 5px;
-    right: 5px;
-    background-image: -moz-linear-gradient(top, #1c1e1f, #eff3f73a);
-  }
-  
-  #closeIcon:hover{
-    background-image: -moz-linear-gradient(top, #080808, #eff3f7de);
-  }
-  
-  .card_body{
-    width: 15vw;
-    min-width: 180px;
-    height: 100vh;
-    margin:0;
-    padding:0;
-    display: flex;
-  }
-  
-  
-  .iconoClima{
-    
-    display:flex;
-    justify-self: flex-start;
-    padding-bottom:5px;
-    margin-left:20px;
-    margin-right: 20px;
-    margin-bottom: 0;
-    margin-top: 0;
-    padding: 0
-  }
-  
-  .temperatura{
-    color:whitesmoke;
-    text-shadow: 0 0 10px #050505, 6px 18px 2px rgba(206,89,55,0);
-    font-size: 12px;
-    margin-top:10px;
-    padding:0;
-    height: 50px;
-  
-  }
-  
-  .data_temp{
-    margin:0;
-    padding:0
-  }
-  
+}

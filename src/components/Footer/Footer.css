@@ -11,9 +11,19 @@
   height: 20vh;
 }
 
-.Linkedin, .Github, .Public, .Info {
+.Linkedin,
+.Github,
+.Public,
+.Info {
   width: 0px;
   height: 0px;
   color: white;
+}
+
+.Linkedin:hover,
+.Github:hover,
+.Public:hover,
+.Info:hover {
+  border-bottom: solid thin white;
 }
 /*# sourceMappingURL=Footer.css.map */

@@ -1,4 +1,16 @@
 .header {
   margin: 0px;
 }
+
+.GeneralContainer {
+  width: 100vw;
+  height: 90vh;
+}
+
+.Footer {
+  position: absolute;
+  bottom: 0px;
+  background: -webkit-gradient(linear, left top, right top, from(#1d2671), to(#c33764));
+  background: linear-gradient(to right, #1d2671, #c33764);
+}
 /*# sourceMappingURL=Home.css.map */

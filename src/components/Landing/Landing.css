@@ -2,6 +2,8 @@
 .generalContainer {
   margin: 0px;
   padding: 0px;
+  background: -webkit-gradient(linear, left top, right top, from(#1d2671), to(#c33764));
+  background: linear-gradient(to right, #1d2671, #c33764);
 }
 
 .initialContainer {
@@ -143,7 +145,7 @@
   .arrow {
     font-size: 100px !important;
     position: absolute;
-    bottom: 220px;
+    bottom: -20px;
     animation: arrow 1s linear 0s infinite alternate-reverse forwards;
   }
   .btn {

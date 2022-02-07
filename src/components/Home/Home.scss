@@ -1,3 +1,15 @@
 .header {
   margin: 0px;
 }
+
+.GeneralContainer{
+  width: 100vw;
+  height: 90vh;
+}
+
+.Footer{
+  position: absolute;
+  bottom: 0px;
+  background: -webkit-linear-gradient(to right, #1d2671, #c33764);
+  background: linear-gradient(to right, #1d2671, #c33764);
+}

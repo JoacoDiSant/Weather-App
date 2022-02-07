@@ -4,8 +4,7 @@ import Nav from "../Nav/NavBar/Nav";
 import Cards from "../Cards/Cards";
 import Detail from "../Detail/Detail";
 import SearchBar from "../Nav/SearchBar/SearchBar";
-import env from "dotenv";
-env.config();
+import Footer from "../Footer/Footer";
 
 function Home() {
   const [cities, setCities] = useState([]);
@@ -23,6 +22,7 @@ function Home() {
     )
       .then((r) => r.json())
       .then((recurso) => {
+        console.log(recurso);
         if (recurso.main !== undefined) {
           const ciudad = {
             min: Math.round(recurso.main.temp_min),
@@ -32,6 +32,7 @@ function Home() {
             wind: recurso.wind.speed,
             temp: recurso.main.temp,
             name: recurso.name,
+            city: recurso.sys.country,
             weather: recurso.weather[0].main,
             clouds: recurso.clouds.all,
             latitud: recurso.coord.lat,
@@ -62,29 +63,29 @@ function Home() {
   }
 
   return (
-    <div>
+    <div className="GeneralContainer">
       <div className="header">
         <div className="navBar">
           <Nav onSearch={onSearch} />
         </div>
-        <div className="searchBar">
-          <SearchBar onSearch={onSearch} />
-        </div>
+        <SearchBar onSearch={onSearch} />
       </div>
-      <div className="container_info">
-        <div className="container_detalle">
+      <div className="InfoContainer">
           {muestraDetalle ? (
             <Detail ciudadId={muestraDetalle} resetDetalle={resetDetalle} />
-          ) : null}
-        </div>
-        <div className="container_cards">
-          <Cards
-            cities={cities}
-            onClose={onClose}
-            getDetalle={getDetalle}
-            resetDetalle={resetDetalle}
-          />
-        </div>
+          ) : (
+            <div className="container_cards">
+              <Cards
+                cities={cities}
+                onClose={onClose}
+                getDetalle={getDetalle}
+                resetDetalle={resetDetalle}
+              />
+            </div>
+          )}
+      </div>
+      <div className="Footer">
+        <Footer />
       </div>
     </div>
   );

@@ -1,0 +1,63 @@
+.Search {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.Input {
+  margin-right: 10px;
+  border: none;
+  background-color: transparent;
+  border-bottom: solid thin black;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  width: 40vw;
+  height: 50px;
+}
+
+.Input:focus {
+  outline: none;
+  color: black;
+}
+
+.Input:focus::-webkit-input-placeholder {
+  color: black;
+  opacity: 0.7;
+}
+
+.AddBtn {
+  height: 45px;
+  margin: 1em 0 4em;
+  padding: 0;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: black;
+  border: none;
+}
+
+/*
+    --------------------------------------
+                MEDIA QUERYS
+    --------------------------------------
+*/
+
+$minWidth: 375px;
+$mediWidth1: 446px;
+$mediWidth2: 540px;
+$mediWidth3: 712px;
+$maxWidth1: 1022px;
+$maxWidth2: 1920px;
+
+@media (min-width: $minWidth) and (max-width: $mediWidth1) {
+  .Input {
+    letter-spacing: 1px;
+    width: 50vw;
+    height: 30px;
+  }
+
+  .AddBtn {
+    height: 12px;
+    padding-right: 12px;
+  }
+}

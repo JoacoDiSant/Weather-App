@@ -3,6 +3,8 @@
 .generalContainer {
   margin: 0px;
   padding: 0px;
+  background: -webkit-linear-gradient(to right, #1d2671, #c33764);
+  background: linear-gradient(to right, #1d2671, #c33764);
 }
 
 .initialContainer {
@@ -18,11 +20,10 @@
   align-items: center;
 }
 
-.h1{
+.h1 {
   position: absolute;
   top: 350px;
 }
-
 
 .btnContainer {
   position: absolute;
@@ -66,13 +67,12 @@
   cursor: pointer;
 }
 
-.arrow{
+.arrow {
   font-size: 200px !important;
   position: absolute;
   bottom: 30px;
   animation: arrow 1s linear 0s infinite alternate-reverse forwards;
 }
-
 
 /*
     --------------------------------------
@@ -89,8 +89,6 @@
     transform: translateY(0);
   }
 }
-
-
 
 /*
     --------------------------------------
@@ -125,10 +123,10 @@ $maxWidth2: 1920px;
     height: 30px;
   }
 
-  .arrow{
+  .arrow {
     font-size: 100px !important;
     position: absolute;
-    bottom: 220px;
+    bottom: -20px;
     animation: arrow 1s linear 0s infinite alternate-reverse forwards;
   }
 
@@ -141,10 +139,9 @@ $maxWidth2: 1920px;
     0% {
       transform: translateY(-170px);
     }
-  
+
     100% {
       transform: translateY(0);
     }
   }
-
 }

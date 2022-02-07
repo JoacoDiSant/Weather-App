@@ -1,0 +1,59 @@
+.Search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
+}
+
+.Input {
+  margin-right: 10px;
+  border: none;
+  background-color: transparent;
+  border-bottom: solid thin black;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  width: 40vw;
+  height: 50px;
+}
+
+.Input:focus {
+  outline: none;
+  color: black;
+}
+
+.Input:focus::-webkit-input-placeholder {
+  color: black;
+  opacity: 0.7;
+}
+
+.AddBtn {
+  height: 45px;
+  margin: 1em 0 4em;
+  padding: 0;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: black;
+  border: none;
+}
+
+/*
+    --------------------------------------
+                MEDIA QUERYS
+    --------------------------------------
+*/
+@media (min-width: 375px) and (max-width: 446px) {
+  .Input {
+    letter-spacing: 1px;
+    width: 50vw;
+    height: 30px;
+  }
+  .AddBtn {
+    height: 12px;
+    padding-right: 12px;
+  }
+}
+/*# sourceMappingURL=SearchBar.css.map */

@@ -1,8 +1,3 @@
-body{
-  background: -webkit-linear-gradient(to right, #1d2671, #c33764);
-  background: linear-gradient(to right, #1d2671, #c33764);
-}
-
 .App {
   text-align: center;
   position: absolute;
