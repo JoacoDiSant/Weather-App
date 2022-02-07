@@ -8,13 +8,13 @@ export default function Ciudad({ ciudadId, resetDetalle }) {
 
   const getWeather = (ciudad) => {
     fetch(
-      `http://api.openweathermap.org/data/2.5/weather?id=${ciudad}&lang=es&appid=${apiKey}&units=metric`
+      `https://api.openweathermap.org/data/2.5/weather?id=${ciudad}&lang=es&appid=${apiKey}&units=metric`
     )
       .then((r) => r.json())
       .then((recurso) => {
         if (recurso.main !== undefined) {
           fetch(
-            `http://api.openweathermap.org/data/2.5/onecall?lat=${recurso.coord.lat}&lon=${recurso.coord.lon}&units=metric&exclude=hourly,minutely,alerts&lang=es&appid=${apiKey}`
+            `https://api.openweathermap.org/data/2.5/onecall?lat=${recurso.coord.lat}&lon=${recurso.coord.lon}&units=metric&exclude=hourly,minutely,alerts&lang=es&appid=${apiKey}`
           )
             .then((response) => response.json())
             .then((res) => {
