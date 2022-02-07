@@ -23,7 +23,7 @@ export default function Card({
       <div className="body">
         <img
           className="iconoClima"
-          src={"http://openweathermap.org/img/wn/" + img + "@2x.png"}
+          src={"https://openweathermap.org/img/wn/" + img + "@2x.png"}
           width="50"
           height="50"
           alt=""

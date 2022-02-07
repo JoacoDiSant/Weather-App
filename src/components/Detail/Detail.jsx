@@ -83,7 +83,7 @@ export default function Ciudad({ ciudadId, resetDetalle }) {
               <div className="actual_img">
                 <img
                   className="iconoClima"
-                  src={`http://openweathermap.org/img/wn/${city.img}@2x.png`}
+                  src={`https://openweathermap.org/img/wn/${city.img}@2x.png`}
                   width="90"
                   height="90"
                   alt=""
@@ -102,7 +102,7 @@ export default function Ciudad({ ciudadId, resetDetalle }) {
                 <div className="pronostico_info">
                   <img
                     className="iconoClima"
-                    src={`http://openweathermap.org/img/wn/${city.forecast[1].weather[0].icon}@2x.png`}
+                    src={`https://openweathermap.org/img/wn/${city.forecast[1].weather[0].icon}@2x.png`}
                     width="60"
                     height="60"
                     alt=""
@@ -118,7 +118,7 @@ export default function Ciudad({ ciudadId, resetDetalle }) {
                 <div className="pronostico_info">
                   <img
                     className="iconoClima"
-                    src={`http://openweathermap.org/img/wn/${city.forecast[2].weather[0].icon}@2x.png`}
+                    src={`https://openweathermap.org/img/wn/${city.forecast[2].weather[0].icon}@2x.png`}
                     width="60"
                     height="60"
                     alt=""
@@ -134,7 +134,7 @@ export default function Ciudad({ ciudadId, resetDetalle }) {
                 <div className="pronostico_info">
                   <img
                     className="iconoClima"
-                    src={`http://openweathermap.org/img/wn/${city.forecast[3].weather[0].icon}@2x.png`}
+                    src={`https://openweathermap.org/img/wn/${city.forecast[3].weather[0].icon}@2x.png`}
                     width="60"
                     height="60"
                     alt=""
@@ -150,7 +150,7 @@ export default function Ciudad({ ciudadId, resetDetalle }) {
                 <div className="pronostico_info">
                   <img
                     className="iconoClima"
-                    src={`http://openweathermap.org/img/wn/${city.forecast[4].weather[0].icon}@2x.png`}
+                    src={`https://openweathermap.org/img/wn/${city.forecast[4].weather[0].icon}@2x.png`}
                     width="60"
                     height="60"
                     alt=""
