@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from 'axios'
 import "./Home.css";
 import Nav from "../Nav/NavBar/Nav";
 import Cards from "../Cards/Cards";
@@ -17,26 +18,25 @@ function Home() {
   let apiKey = "f9113edd4d5c19caba9923a536e8e53e";
 
   function onSearch(ciudad) {
-    fetch(
+    axios.get(
       `http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric`
     )
-      .then((r) => r.json())
       .then((recurso) => {
-        console.log(recurso);
-        if (recurso.main !== undefined) {
+        let data = recurso.data
+        if (data !== undefined) {
           const ciudad = {
-            min: Math.round(recurso.main.temp_min),
-            max: Math.round(recurso.main.temp_max),
-            img: recurso.weather[0].icon,
-            id: recurso.id,
-            wind: recurso.wind.speed,
-            temp: recurso.main.temp,
-            name: recurso.name,
-            city: recurso.sys.country,
-            weather: recurso.weather[0].main,
-            clouds: recurso.clouds.all,
-            latitud: recurso.coord.lat,
-            longitud: recurso.coord.lon,
+            min: Math.round(data.temp_min),
+            max: Math.round(data.temp_max),
+            img: data.weather[0].icon,
+            id: data.id,
+            wind: data.wind.speed,
+            temp: data.temp,
+            name: data.name,
+            city: data.sys.country,
+            weather: data.weather[0].data,
+            clouds: data.clouds.all,
+            latitud: data.coord.lat,
+            longitud: data.coord.lon,
           };
           const existe = cities.filter((city) => city.id === ciudad.id);
           if (existe.length !== 0) {
